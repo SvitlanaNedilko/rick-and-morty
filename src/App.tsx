@@ -10,8 +10,11 @@ const App: React.FC = () => {
       <NavBar />
       <div>
         <Routes>
-          <Route element={<CharactersPage />} path="/" />
-          <Route element={<EpisodePage />} path="/episode" />
+          <Route element={<CharactersPage />} path="/test-rick-and-morty" />
+          <Route
+            element={<EpisodePage />}
+            path="/test-rick-and-morty/episode"
+          />
         </Routes>
       </div>
     </BrowserRouter>

@@ -9,13 +9,13 @@ export const NavBar: React.FC = () => (
       <Toolbar className="Navigation">
         <NavLink
           className={({ isActive }) => 'link' + (isActive ? ' activlink' : '')}
-          to={'/'}
+          to={'/test-rick-and-morty'}
         >
           Characters
         </NavLink>
         <NavLink
           className={({ isActive }) => 'link' + (isActive ? ' activlink' : '')}
-          to={'/episode'}
+          to={'/test-rick-and-morty/episode'}
         >
           Episode
         </NavLink>
