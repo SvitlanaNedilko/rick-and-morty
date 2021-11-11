@@ -1,0 +1,11 @@
+.Search-Container {
+  margin: 20px 40px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+
+  [class*='MuiRadio-root'] {
+    padding: 3px;
+  }
+}

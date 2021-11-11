@@ -1,0 +1,15 @@
+.Container {
+  margin: 20px 40px;
+}
+
+.Title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Character-list {
+  display: grid;
+  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
