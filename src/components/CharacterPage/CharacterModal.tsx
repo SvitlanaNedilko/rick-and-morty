@@ -1,7 +1,7 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
-import { SxProps } from '@mui/system';
+import * as React from 'react'
+import Box from '@mui/material/Box'
+import Modal from '@mui/material/Modal'
+import { SxProps } from '@mui/system'
 
 const style: SxProps = {
   position: 'absolute',
@@ -15,35 +15,28 @@ const style: SxProps = {
   p: 4,
   '&:focus': {
     border: 'none',
-    outline:'none'
-  }
-};
-
+    outline: 'none',
+  },
+}
 
 interface ICharacterModalProps {
   character: ICharacter
   onClose: () => void
- 
 }
 
-export const CharacterModal: React.FC<ICharacterModalProps> = ({character, onClose }) => (
-<Modal
-  open={!!character?.id}
-    onClose={onClose}
-    // disableScrollLock
-    // disableAutoFocus
->
-  <Box sx={style}>
-    <img
-              src={character?.image}
-              alt={character?.name}
-            />
+export const CharacterModal: React.FC<ICharacterModalProps> = ({
+  character,
+  onClose,
+}) => (
+  <Modal open={!!character?.id} onClose={onClose}>
+    <Box sx={style}>
+      <img src={character?.image} alt={character?.name} />
       <p>name:{character?.name}</p>
-      <p>gender:{character?.gender }</p>
-      <p>{character?.status}-{character?.species}</p>
+      <p>gender:{character?.gender}</p>
+      <p>
+        {character?.status}-{character?.species}
+      </p>
       <p>location: {character?.location?.name}</p>
-     
     </Box>
-    
   </Modal>
 )

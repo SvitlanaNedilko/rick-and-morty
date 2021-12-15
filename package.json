@@ -1,6 +1,6 @@
 {
   "name": "test-rick-and-morty",
-  "homepage": "https://svitlananedilko.github.io/test-rick-and-morty/",
+  "homepage": "https://svitlananedilko.github.io/rick-and-morty/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
